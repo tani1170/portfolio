@@ -8,7 +8,21 @@ hr {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+nav a {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fbf5e9;
+}
 
+.theme {
+  text-align: right;
+}
+
+.info {
+  text-align: left;
+}
 /* -------------- BURGER ------------ */
 header {
   position: fixed;
@@ -38,11 +52,12 @@ header {
   position: fixed;
 }
 
-/*------Kode der bruges i javascript------*/
+/*------BURGER KODE I JAVA------*/
 .hide {
   opacity: 0;
 }
 
+/* BURGER MENU FOR MOBIL FIRST */
 @media (max-width: 720px) {
   nav {
     top: 0;
@@ -52,26 +67,11 @@ header {
     transform: translateX(100%);
     justify-content: end;
   }
-  a {
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #fbf5e9;
-  }
 
-  .theme {
-    text-align: right;
-  }
-
-  .info {
-    text-align: left;
-  }
   nav.shown {
     transform: none;
   }
   header nav ul {
-    /* position: sticky; */
     list-style: none;
     padding: 0;
     z-index: 4;
@@ -93,13 +93,14 @@ header {
   .burger {
     display: block;
   }
+
   .burger_container {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-/* -------------MOBILE--------------- */
+/* -------------MOBILE SVG POSISTIONING FOR MOBILE--------------- */
 
 .back1_container {
   width: 50%;
@@ -108,6 +109,7 @@ header {
   top: 30%;
   left: 15%;
 }
+
 .back1_sprite {
   width: 100%;
   height: 100%;
@@ -123,6 +125,7 @@ header {
   top: 52%;
   left: 45%;
 }
+
 .back2_sprite {
   width: 100%;
   height: 100%;
@@ -139,6 +142,7 @@ header {
   left: 15%;
   rotate: 10deg;
 }
+
 .form1_sprite {
   width: 100%;
   height: 100%;
@@ -155,6 +159,7 @@ header {
   left: 15%;
   z-index: -1;
 }
+
 .form2_sprite {
   width: 100%;
   height: 100%;
@@ -162,6 +167,7 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 .form3_container {
   width: 16%;
   aspect-ratio: 2/3;
@@ -170,6 +176,7 @@ header {
   left: 39%;
   opacity: 0;
 }
+
 .form3_sprite {
   width: 100%;
   height: 100%;
@@ -186,6 +193,7 @@ header {
   top: 10%;
   left: 50%;
 }
+
 .flower1_sprite {
   width: 100%;
   height: 100%;
@@ -202,6 +210,7 @@ header {
   left: 39%;
   opacity: 0;
 }
+
 .flower2_sprite {
   width: 100%;
   height: 100%;
@@ -223,6 +232,7 @@ header {
   .burger {
     display: none;
   }
+
   nav {
     height: 100%;
     width: 30rem;
@@ -235,33 +245,13 @@ header {
     /* padding-top: 16px; */
   }
 
-  nav a {
-    /* padding: 6px 8px 6px 16px; */
-    font-size: 2rem;
-    color: #fbf5e9;
-    display: block;
-    text-decoration: none;
-  }
-
   nav ul {
     list-style-type: none;
     padding: 7rem;
     padding-top: 15rem;
   }
 
-  .theme {
-    text-align: right;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .info {
-    text-align: left;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  /* ----------------- HOME SCREEN --------------- */
+  /* ----------------- HOME SCREEN SVG POSITIONING FOR DESKTOP--------------- */
 
   .back1_container {
     width: 20%;

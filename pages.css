@@ -8,6 +8,21 @@ hr {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+nav a {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fbf5e9;
+}
+
+.theme {
+  text-align: right;
+}
+
+.info {
+  text-align: left;
+}
 
 /* -------------MOBILE------------- */
 
@@ -54,26 +69,11 @@ header {
     transform: translateX(100%);
     justify-content: end;
   }
-  a {
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #fbf5e9;
-  }
 
-  .theme {
-    text-align: right;
-  }
-
-  .info {
-    text-align: left;
-  }
   nav.shown {
     transform: none;
   }
   header nav ul {
-    /* position: sticky; */
     list-style: none;
     padding: 0;
     z-index: 4;
@@ -118,35 +118,9 @@ header {
     /* padding-top: 16px; */
   }
 
-  nav a {
-    /* padding: 6px 8px 6px 16px; */
-    font-size: 2rem;
-    color: #fbf5e9;
-    display: block;
-    text-decoration: none;
-  }
-
   nav ul {
     list-style-type: none;
     padding: 4rem;
     padding-top: 15rem;
-  }
-
-  .theme {
-    text-align: right;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .info {
-    text-align: left;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  hr {
-    color: #fbf5e9;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
   }
 }
