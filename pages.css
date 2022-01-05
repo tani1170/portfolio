@@ -1,14 +1,111 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+hr {
+  color: #fbf5e9;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 /* -------------MOBILE------------- */
 
+/* -------------- BURGER ------------ */
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.burger_container {
+  width: 100%;
+}
+
+.burger {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  /*gennemsigtig baggrund uden kant*/
+  background: transparent;
+  border: none;
+
+  /*ikonets præcise størrelse*/
+  aspect-ratio: 16/9;
+
+  /*musen bliver til en pegefinger når man kører den over ikonet*/
+  cursor: pointer;
+
+  z-index: 10;
+
+  position: fixed;
+}
+
+/*------Kode der bruges i javascript------*/
+.hide {
+  opacity: 0;
+}
+
+@media (max-width: 720px) {
+  nav {
+    top: 0;
+    right: 0;
+    display: flex;
+    transition: 0.4s;
+    transform: translateX(100%);
+    justify-content: end;
+  }
+  a {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fbf5e9;
+  }
+
+  .theme {
+    text-align: right;
+  }
+
+  .info {
+    text-align: left;
+  }
+  nav.shown {
+    transform: none;
+  }
+  header nav ul {
+    /* position: sticky; */
+    list-style: none;
+    padding: 0;
+    z-index: 4;
+  }
+
+  li {
+    padding-top: 1rem;
+  }
+
+  ul.white {
+    background-color: #5c695f;
+    height: 100vh;
+    width: 40vh;
+    display: grid;
+    place-content: center;
+    margin: 0%;
+  }
+
+  .burger {
+    display: block;
+  }
+  .burger_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 /* -------------DESKTOP------------- */
 
 @media (min-width: 720px) {
-  /* .navbar {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
-    justify-content: center;
-  } */
+  .burger {
+    display: none;
+  }
   nav {
     height: 100%;
     width: 20rem;
