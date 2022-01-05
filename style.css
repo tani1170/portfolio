@@ -3,6 +3,10 @@
   padding: 0%;
   box-sizing: border-box;
 }
+body {
+  background-color: #fbf5e9;
+}
+
 hr {
   color: #fbf5e9;
   margin-top: 2rem;
@@ -23,6 +27,23 @@ nav a {
 .info {
   text-align: left;
 }
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font: 0.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 /* -------------- BURGER ------------ */
 header {
   position: fixed;
@@ -100,7 +121,7 @@ header {
   }
 }
 
-/* -------------MOBILE SVG POSISTIONING FOR MOBILE--------------- */
+/* ------------- HOMEPAGE BACKGROUND SVG POSISTIONING FOR MOBILE--------------- */
 
 .back1_container {
   width: 50%;
@@ -122,7 +143,7 @@ header {
   width: 40%;
   aspect-ratio: 2/3;
   position: fixed;
-  top: 52%;
+  top: 62%;
   left: 45%;
 }
 
@@ -138,7 +159,7 @@ header {
   width: 50%;
   aspect-ratio: 2/3;
   position: fixed;
-  top: 60%;
+  top: 68%;
   left: 15%;
   rotate: 10deg;
 }
@@ -219,6 +240,104 @@ header {
   background-repeat: no-repeat;
 }
 
+/* ------------------------------------ MOBILE---------------------------------------------- */
+
+/* -----------------CONTACT PAGE------------------- */
+#contact_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contact_section .section_wrapper {
+  text-align: center;
+  position: relative;
+  padding: 10rem;
+}
+
+#contact_section .section_wrapper h1 {
+  padding-bottom: 2rem;
+}
+.mail {
+  padding-bottom: 2rem;
+}
+.mobile {
+  padding-bottom: 2rem;
+}
+.social {
+  padding-bottom: 2rem;
+}
+
+.contactform1_container {
+  width: 90%;
+  aspect-ratio: 35/22;
+  position: fixed;
+  top: 10%;
+  left: 38.5%;
+  z-index: -1;
+}
+.contactform1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-11.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contactform2_container {
+  width: 70%;
+  aspect-ratio: 503/327;
+  position: fixed;
+  top: 65%;
+  left: -17%;
+  opacity: 100%;
+  z-index: -1;
+}
+
+.contactform2_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-12.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contactflower1_container {
+  width: 30%;
+  aspect-ratio: 2/3;
+  position: fixed;
+  top: 35%;
+  left: 60%;
+  z-index: -1;
+  rotate: 42deg;
+}
+
+.contactflower1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-05.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contactflower2_container {
+  width: 40%;
+  aspect-ratio: 2/3;
+  position: fixed;
+  top: 75%;
+  left: 39%;
+  opacity: 100%;
+  z-index: -1;
+}
+
+.contactflower2_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-06.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 /* -------------DESKTOP------------- */
 
 @media (min-width: 720px) {
@@ -251,7 +370,9 @@ header {
     padding-top: 15rem;
   }
 
-  /* ----------------- HOME SCREEN SVG POSITIONING FOR DESKTOP--------------- */
+  /* ----------------------- CONTACT -------------------  */
+
+  /* ----------------- HOME SCREEN BACKGROUND SVG POSITIONING FOR DESKTOP--------------- */
 
   .back1_container {
     width: 20%;
@@ -354,6 +475,78 @@ header {
     opacity: 100%;
   }
   .flower2_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-06.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* -------------- CONTACT BACKGROUND POSITIONING SVG DESKTOP----------- */
+  .contactform1_container {
+    width: 32%;
+    aspect-ratio: 35/22;
+    position: fixed;
+    top: 7%;
+    left: 5%;
+    z-index: -1;
+  }
+  .contactform1_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-11.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .contactform2_container {
+    width: 27%;
+    aspect-ratio: 503/327;
+    position: fixed;
+    top: 68%;
+    left: 17%;
+    opacity: 100%;
+    z-index: -1;
+  }
+
+  .contactform2_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-12.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .contactflower1_container {
+    width: 20%;
+    aspect-ratio: 2/3;
+    position: fixed;
+    top: 6%;
+    left: 47%;
+    z-index: -1;
+    rotate: 345deg;
+  }
+
+  .contactflower1_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-05.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .contactflower2_container {
+    width: 15%;
+    aspect-ratio: 2/3;
+    position: fixed;
+    top: 71%;
+    left: 0%;
+    opacity: 100%;
+    z-index: -1;
+    rotate: 19deg;
+  }
+
+  .contactflower2_sprite {
     width: 100%;
     height: 100%;
     background-image: url(/image/port-06.svg);
