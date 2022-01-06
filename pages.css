@@ -176,4 +176,28 @@ header {
     padding: 4rem;
     padding-top: 15rem;
   }
+
+  /* ------------WEB ---------- */
+  #firstweb_section .section_wrapper {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  #firstweb_section h2 {
+    text-align: center;
+    padding-bottom: 5rem;
+    text-decoration: underline;
+  }
+  .element_3 {
+    display: grid;
+  }
+
+  .element_img1 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .element_img2 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+  }
 }
