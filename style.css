@@ -1,3 +1,4 @@
+/* ------------------------------------- MAIN RULES ------------------------------------- */
 * {
   margin: 0%;
   padding: 0%;
@@ -6,6 +7,8 @@
 body {
   background-color: #fbf5e9;
 }
+
+/* ------------- NAVIGATION ------------- */
 
 hr {
   color: #fbf5e9;
@@ -28,23 +31,31 @@ nav a {
   text-align: left;
 }
 
+/* -------------------- FONTS --------------- */
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
 
 h2 {
-  font-size: 1rem;
   text-transform: uppercase;
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
 }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
 p {
-  font: 0.7rem;
+  font: 0.9rem;
   font-family: "Source Sans Pro", sans-serif;
 }
 
-/* -------------- BURGER ------------ */
+/* ----------------------- BURGER ----------------- */
 header {
   position: fixed;
   z-index: 10;
@@ -73,12 +84,12 @@ header {
   position: fixed;
 }
 
-/*------BURGER KODE I JAVA------*/
+/*----------- BURGER KODE I JAVA ----------*/
 .hide {
   opacity: 0;
 }
 
-/* BURGER MENU FOR MOBIL FIRST */
+/* ------BURGER MENU FOR MOBIL FIRST ------*/
 @media (max-width: 720px) {
   nav {
     top: 0;
@@ -121,7 +132,31 @@ header {
   }
 }
 
-/* ------------- HOMEPAGE BACKGROUND SVG POSISTIONING FOR MOBILE--------------- */
+/* ------------------------------------ MOBILE---------------------------------------------- */
+
+/* -----------------CONTACT PAGE------------------- */
+#contact_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contact_section .section_wrapper {
+  text-align: center;
+  position: relative;
+  padding: 10rem;
+}
+
+#contact_section .section_wrapper h1 {
+  padding-bottom: 2rem;
+}
+.headline {
+  padding-bottom: 2rem;
+}
+
+/* -------------------------------SVG BACKGROUND POSITIONS MOBILE ------------------------- */
+
+/* ---------------- HOMEPAGE SVG-------------- */
 
 .back1_container {
   width: 50%;
@@ -240,33 +275,7 @@ header {
   background-repeat: no-repeat;
 }
 
-/* ------------------------------------ MOBILE---------------------------------------------- */
-
-/* -----------------CONTACT PAGE------------------- */
-#contact_section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#contact_section .section_wrapper {
-  text-align: center;
-  position: relative;
-  padding: 10rem;
-}
-
-#contact_section .section_wrapper h1 {
-  padding-bottom: 2rem;
-}
-.mail {
-  padding-bottom: 2rem;
-}
-.mobile {
-  padding-bottom: 2rem;
-}
-.social {
-  padding-bottom: 2rem;
-}
+/* ------------- CONTACT SVG -------------- */
 
 .contactform1_container {
   width: 90%;
@@ -292,6 +301,7 @@ header {
   left: -17%;
   opacity: 100%;
   z-index: -1;
+  opacity: 80%;
 }
 
 .contactform2_sprite {
@@ -310,6 +320,7 @@ header {
   left: 60%;
   z-index: -1;
   rotate: 42deg;
+  opacity: 50%;
 }
 
 .contactflower1_sprite {
@@ -328,6 +339,7 @@ header {
   left: 39%;
   opacity: 100%;
   z-index: -1;
+  opacity: 50%;
 }
 
 .contactflower2_sprite {
@@ -338,16 +350,41 @@ header {
   background-repeat: no-repeat;
 }
 
-/* -------------DESKTOP------------- */
+/* ----------------------------------------DESKTOP------------------------------------------ */
+@media (min-width: 1010px) {
+  /* --------------- CONTACT  ------------------  */
+  #contact_section .section_wrapper {
+    display: block;
+    text-align: justify;
+  }
+  #contact_section {
+    display: block;
+  }
 
+  .contactname {
+    text-align: center;
+  }
+  /* .mail {
+    grid-row: 5/6;
+    grid-column: 2/5;*/
+
+  .headline h2 .headline p {
+    margin: 0px;
+    display: inline-block;
+    padding: 1em;
+    vertical-align: top;
+    line-height: 28px;
+  }
+  .headline p {
+    text-align: right;
+    padding-right: 2em;
+    float: right;
+  }
+}
 @media (min-width: 720px) {
-  /* .navbar {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
-    justify-content: center;
-  } */
-
+  main {
+    margin-right: 30rem;
+  }
   .burger {
     display: none;
   }
@@ -370,9 +407,16 @@ header {
     padding-top: 15rem;
   }
 
-  /* ----------------------- CONTACT -------------------  */
+  .port {
+    rotate: 90deg;
+    top: 75%;
+    right: 90%;
+    position: sticky;
+  }
 
-  /* ----------------- HOME SCREEN BACKGROUND SVG POSITIONING FOR DESKTOP--------------- */
+  /* -------------------------------------SVG BACKGROUND POSITIONS ----------------------------- */
+
+  /* ----------------- HOME SCREEN SVG--------------- */
 
   .back1_container {
     width: 20%;
@@ -482,7 +526,8 @@ header {
     background-repeat: no-repeat;
   }
 
-  /* -------------- CONTACT BACKGROUND POSITIONING SVG DESKTOP----------- */
+  /* -------------- CONTACT BACKGROUND----------- */
+
   .contactform1_container {
     width: 32%;
     aspect-ratio: 35/22;
@@ -507,6 +552,7 @@ header {
     left: 17%;
     opacity: 100%;
     z-index: -1;
+    opacity: 80%;
   }
 
   .contactform2_sprite {
@@ -525,6 +571,7 @@ header {
     left: 47%;
     z-index: -1;
     rotate: 345deg;
+    opacity: 50%;
   }
 
   .contactflower1_sprite {
@@ -544,6 +591,7 @@ header {
     opacity: 100%;
     z-index: -1;
     rotate: 19deg;
+    opacity: 50%;
   }
 
   .contactflower2_sprite {
