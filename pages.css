@@ -9,6 +9,10 @@ body {
   background-color: #fbf5e9;
 }
 
+img {
+  max-width: 100%;
+  background-size: cover;
+}
 /* ------------- NAVIGATION ------------- */
 
 hr {
@@ -44,6 +48,7 @@ h2 {
   text-transform: uppercase;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
+  padding-top: 5rem;
 }
 
 h3 {
@@ -178,18 +183,24 @@ header {
   }
 
   /* ------------WEB ---------- */
-  #firstweb_section .section_wrapper {
+  #first_section .section_wrapper {
     display: flex;
     flex-flow: wrap;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
-  #firstweb_section h2 {
+  #first_section h2 {
     text-align: center;
     padding-bottom: 5rem;
     text-decoration: underline;
   }
-  .element_3 {
-    display: grid;
+
+  .element_2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .element_img1 {
@@ -200,4 +211,70 @@ header {
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
   }
+
+  /* -------- CAROUSEL--------- */
+  .carousel {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .slides {
+    scrollbar-width: none;
+  }
+  .slides-item {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 100px;
+    /* height: 600px; */
+    justify-content: center;
+    /* margin: 0 1rem; */
+    position: relative;
+    scroll-snap-align: start;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform 0.5s;
+    width: 100%;
+  }
+
+  .carousel__nav {
+    padding: 1.25rem 0.5rem;
+  }
+
+  .slider-nav {
+    align-items: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    height: 1.5rem;
+    justify-content: center;
+    padding: 0.5rem;
+    position: relative;
+    text-decoration: none;
+    width: 1.5rem;
+  }
+
+  .slider-nav:hover,
+  .slider-nav:active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* .slide-1 {
+    background-color: #fdc;
+  }
+
+  .slide-2 {
+    background-color: #bfd;
+  } */
 }

@@ -129,10 +129,40 @@ header {
   .burger_container {
     display: flex;
     justify-content: flex-end;
+    align-content: center;
   }
 }
 
 /* ------------------------------------ MOBILE---------------------------------------------- */
+
+/* ---------HOMEPAGE ----------- */
+
+.name h1 {
+  position: fixed;
+  top: 15%;
+  z-index: 4;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nameport h2 {
+  position: fixed;
+  text-align: left;
+  top: 80%;
+  right: 65%;
+  rotate: 90deg;
+}
+
+/* -------------- ABOUT BACKGROUND----------- */
+.about_section {
+  padding: 4rem;
+}
+
+.about_text {
+  display: flex;
+  justify-content: center;
+}
 
 /* -----------------CONTACT PAGE------------------- */
 #contact_section {
@@ -226,7 +256,6 @@ header {
 
 .form3_container {
   width: 16%;
-  aspect-ratio: 2/3;
   position: fixed;
   top: 45%;
   left: 39%;
@@ -246,8 +275,9 @@ header {
   width: 40%;
   aspect-ratio: 2/3;
   position: fixed;
-  top: 10%;
-  left: 50%;
+  top: 45%;
+  left: 55%;
+  rotate: 15deg;
 }
 
 .flower1_sprite {
@@ -271,6 +301,57 @@ header {
   width: 100%;
   height: 100%;
   background-image: url(/image/port-06.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* -------------- ABOUT BACKGROUND----------- */
+
+.aboutform1_container {
+  width: 60%;
+  aspect-ratio: 2/3;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  rotate: 0deg;
+  z-index: -1;
+}
+.aboutform1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-11.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.aboutform2_container {
+  width: 70%;
+  aspect-ratio: 2/3;
+  position: fixed;
+  top: 60%;
+  left: -15%;
+  opacity: 60%;
+  rotate: 50deg;
+}
+.aboutform2_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-08.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.aboutflower1_container {
+  width: 25%;
+  aspect-ratio: 2/3;
+  position: fixed;
+  top: 2%;
+  left: -2%;
+  rotate: 0deg;
+  opacity: 60%;
+}
+.aboutflower1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-13.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -415,6 +496,37 @@ header {
     position: sticky;
   }
 
+  /* ---------HOMEPAGE ----------- */
+
+  .name h1 {
+    text-align: right;
+    float: right;
+    position: relative;
+    padding-top: 3rem;
+  }
+  .nameport h2 {
+    position: fixed;
+    text-align: left;
+    top: 80%;
+    right: 90%;
+    rotate: 90deg;
+  }
+
+  /* -------------- ABOUT BACKGROUND----------- */
+  .about_section {
+    padding: 4rem;
+  }
+
+  .about_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .about_text {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
   /* -------------------------------------SVG BACKGROUND POSITIONS ----------------------------- */
 
   /* ----------------- HOME SCREEN SVG--------------- */
@@ -423,8 +535,8 @@ header {
     width: 20%;
     aspect-ratio: 3/6;
     position: fixed;
-    top: 12%;
-    left: 10%;
+    top: 20%;
+    left: 8%;
   }
   .back1_sprite {
     width: 100%;
@@ -438,8 +550,8 @@ header {
     width: 18%;
     aspect-ratio: 2/3;
     position: fixed;
-    top: 43%;
-    left: 22%;
+    top: 45%;
+    left: 22.5%;
   }
   .back2_sprite {
     width: 100%;
@@ -453,8 +565,9 @@ header {
     width: 18%;
     aspect-ratio: 2/3;
     position: fixed;
-    top: 65%;
-    left: 12%;
+    top: 71%;
+    left: 11%;
+    rotate: 20deg;
   }
   .form1_sprite {
     width: 100%;
@@ -520,6 +633,74 @@ header {
     opacity: 100%;
   }
   .flower2_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-06.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* -------------- ABOUT BACKGROUND----------- */
+
+  .aboutform1_container {
+    width: 30%;
+    aspect-ratio: 2/3;
+    position: fixed;
+    top: -5%;
+    left: 30%;
+    rotate: -10deg;
+    z-index: -1;
+  }
+  .aboutform1_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-14.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .aboutform2_container {
+    width: 16%;
+    aspect-ratio: 2/3;
+    position: fixed;
+    top: 55%;
+    left: 10%;
+    opacity: 100%;
+    rotate: 80deg;
+  }
+  .aboutform2_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-08.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .aboutflower1_container {
+    width: 12%;
+    aspect-ratio: 2/3;
+    position: fixed;
+    top: 10%;
+    left: 2%;
+    rotate: 10deg;
+    opacity: 100%;
+  }
+  .aboutflower1_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-13.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .aboutflower2_container {
+    width: 10%;
+    aspect-ratio: 2/3;
+    position: fixed;
+    top: 74%;
+    left: 55%;
+    rotate: 280deg;
+  }
+  .aboutflower2_sprite {
     width: 100%;
     height: 100%;
     background-image: url(/image/port-06.svg);
