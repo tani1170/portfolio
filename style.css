@@ -6,8 +6,12 @@
 }
 body {
   background-color: #fbf5e9;
+  background-image: url(/image/artwork2.png);
 }
-
+img {
+  max-width: 100%;
+  background-size: cover;
+}
 /* ------------- NAVIGATION ------------- */
 
 hr {
@@ -36,12 +40,14 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  color: #2e3530;
 }
 
 h2 {
   text-transform: uppercase;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
+  color: #3c4b3f;
 }
 
 h3 {
@@ -68,7 +74,7 @@ header {
 
 .burger {
   padding-top: 2rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
   /*gennemsigtig baggrund uden kant*/
   background: transparent;
   border: none;
@@ -156,12 +162,44 @@ header {
 
 /* -------------- ABOUT BACKGROUND----------- */
 .about_section {
-  padding: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 8rem;
 }
 
 .about_text {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.about_text h2 {
+  padding-bottom: 2rem;
+}
+
+.pics_container h2 {
+  padding-bottom: 2rem;
+}
+
+.lap2 img {
+  border-radius: 50%;
+}
+
+.lap1 img {
+  border-radius: 50%;
+}
+
+.lap1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.lap2 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  /* order: -1; */
 }
 
 /* -----------------CONTACT PAGE------------------- */
@@ -331,6 +369,7 @@ header {
   left: -15%;
   opacity: 60%;
   rotate: 50deg;
+  z-index: -1;
 }
 .aboutform2_sprite {
   width: 100%;
@@ -347,6 +386,7 @@ header {
   left: -2%;
   rotate: 0deg;
   opacity: 60%;
+  z-index: -1;
 }
 .aboutflower1_sprite {
   width: 100%;
@@ -464,6 +504,49 @@ header {
   }
 }
 
+@media (min-width: 1000px) {
+  /* -------------- ABOUT BACKGROUND----------- */
+
+  .about_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .section_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about_text {
+    padding-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about_text h2 {
+    padding-bottom: 0%;
+  }
+
+  .pics_container {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .lapover {
+    display: grid;
+    position: sticky;
+  }
+
+  .lap1 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 4;
+  }
+
+  .lap2 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 4;
+    order: -1;
+  }
+}
 @media (min-width: 820px) {
   main {
     margin-right: 30rem;
@@ -510,21 +593,6 @@ header {
     top: 80%;
     right: 90%;
     rotate: 90deg;
-  }
-
-  /* -------------- ABOUT BACKGROUND----------- */
-  .about_section {
-    padding: 4rem;
-  }
-
-  .about_section .section_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .about_text {
-    grid-column: 2;
-    grid-row: 4;
   }
 
   /* -------------------------------------SVG BACKGROUND POSITIONS ----------------------------- */
@@ -650,6 +718,7 @@ header {
     left: 30%;
     rotate: -10deg;
     z-index: -1;
+    opacity: 80%;
   }
   .aboutform1_sprite {
     width: 100%;
@@ -660,17 +729,18 @@ header {
   }
   .aboutform2_container {
     width: 16%;
-    aspect-ratio: 2/3;
+    aspect-ratio: 2/4;
     position: fixed;
     top: 55%;
-    left: 10%;
-    opacity: 100%;
+    left: 5%;
+    opacity: 70%;
     rotate: 80deg;
+    z-index: -1;
   }
   .aboutform2_sprite {
     width: 100%;
     height: 100%;
-    background-image: url(/image/port-08.svg);
+    background-image: url(/image/port-16.svg);
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -683,6 +753,8 @@ header {
     left: 2%;
     rotate: 10deg;
     opacity: 100%;
+    z-index: -1;
+    opacity: 70%;
   }
   .aboutflower1_sprite {
     width: 100%;
@@ -699,6 +771,8 @@ header {
     top: 74%;
     left: 55%;
     rotate: 280deg;
+    z-index: -1;
+    opacity: 70%;
   }
   .aboutflower2_sprite {
     width: 100%;

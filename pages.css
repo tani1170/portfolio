@@ -7,6 +7,8 @@
 }
 body {
   background-color: #fbf5e9;
+  background-image: url(/image/artwork2.png);
+  background-size: cover;
 }
 
 img {
@@ -42,6 +44,7 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  color: #2e3530;
 }
 
 h2 {
@@ -49,6 +52,7 @@ h2 {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   padding-top: 5rem;
+  color: #3c4b3f;
 }
 
 h3 {
@@ -63,14 +67,22 @@ p {
 }
 
 /* ------------------------------------ MOBILE---------------------------------------------- */
-/* ------------- WEB --------------- */
-#firstweb_section {
-  padding: 2.5rem;
+/* ------------- ALL ASSIGNMENT PAGES --------------- */
+#first_section {
+  padding: 4rem;
 }
-#firstweb_section h2 {
+#first_section h2 {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-#firstweb_section .section_wrapper h3 {
+#first_section p {
+  padding-top: 1rem;
+  /* padding-bottom: 1rem; */
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+#first_section .section_wrapper h3 {
   padding-bottom: 1rem;
 }
 .section_wrapper {
@@ -79,6 +91,69 @@ p {
 .section_wrapper img {
   max-width: 100%;
   background-size: cover;
+}
+
+.swipe {
+  visibility: hidden;
+}
+
+/* -------------------------------SVG BACKGROUND POSITIONS MOBILE ------------------------- */
+
+.form1_container {
+  width: 60%;
+  aspect-ratio: 2/3;
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  rotate: 20deg;
+  opacity: 50%;
+  z-index: -1;
+}
+
+.form1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-15.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.form2_container {
+  width: 50%;
+  aspect-ratio: 2/4;
+  position: fixed;
+  top: 1%;
+  left: -20%;
+  rotate: 140deg;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.form2_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-16.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.form3_container {
+  width: 50%;
+  aspect-ratio: 2/4;
+  position: fixed;
+  top: 70%;
+  left: -20%;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.form3_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/port-17.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  rotate: 30deg;
 }
 
 /* -------------- BURGER ------------ */
@@ -94,7 +169,7 @@ header {
 
 .burger {
   padding-top: 2rem;
-  padding-right: 2rem;
+  padding-right: 0.6rem;
   /*gennemsigtig baggrund uden kant*/
   background: transparent;
   border: none;
@@ -186,8 +261,8 @@ header {
   #first_section .section_wrapper {
     display: flex;
     flex-flow: wrap;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    /* padding-bottom: 2rem; */
     padding-left: 6rem;
     padding-right: 6rem;
   }
@@ -198,8 +273,14 @@ header {
     text-decoration: underline;
   }
 
+  #first_section .topic p {
+    /* padding-bottom: 5rem; */
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+
   .element_2 {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     padding-bottom: 2rem;
   }
 
@@ -210,6 +291,13 @@ header {
   .element_img2 {
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
+  }
+
+  .carousel .swipe p {
+    visibility: visible;
+    justify-content: center;
+    text-align: center;
+    display: flex;
   }
 
   /* -------- CAROUSEL--------- */
@@ -250,31 +338,64 @@ header {
     padding: 1.25rem 0.5rem;
   }
 
-  .slider-nav {
-    align-items: center;
-    background-color: #ddd;
-    border-radius: 50%;
-    color: #000;
-    display: inline-flex;
-    height: 1.5rem;
-    justify-content: center;
-    padding: 0.5rem;
-    position: relative;
-    text-decoration: none;
-    width: 1.5rem;
+  /* -------------------------------SVG BACKGROUND POSITIONS MOBILE ------------------------- */
+
+  .form1_container {
+    width: 40%;
+    aspect-ratio: 2/3;
+    position: fixed;
+    top: -10%;
+    left: 50%;
+    rotate: 30deg;
+    opacity: 50%;
+    z-index: -1;
   }
 
-  .slider-nav:hover,
-  .slider-nav:active {
-    background-color: #000;
-    color: #fff;
+  .form1_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-15.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
-  /* .slide-1 {
-    background-color: #fdc;
+  .form2_container {
+    width: 20%;
+    aspect-ratio: 2/4;
+    position: fixed;
+    top: -21%;
+    left: -5%;
+    rotate: 100deg;
+    z-index: -1;
+    opacity: 50%;
   }
 
-  .slide-2 {
-    background-color: #bfd;
-  } */
+  .form2_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-16.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .form3_container {
+    width: 30%;
+    aspect-ratio: 2/4;
+    position: fixed;
+    top: 40%;
+    left: 10%;
+    rotate: 60deg;
+
+    z-index: -1;
+    opacity: 50%;
+  }
+
+  .form3_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/port-17.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    rotate: 30deg;
+  }
 }
