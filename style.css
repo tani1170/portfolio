@@ -6,17 +6,28 @@
 }
 body {
   background-color: #fbf5e9;
-  background-image: url(/image/artwork2.png);
+  background-image: url(image/artwork2.png);
 }
 img {
   max-width: 100%;
   background-size: cover;
 }
+.headline a:link {
+  color: #2e3530;
+}
+.headline a:visited {
+  color: #664d1a;
+}
+.headline a:hover {
+  color: #b98a2c;
+}
 /* ------------- NAVIGATION ------------- */
 
 hr {
   color: #fbf5e9;
-  margin-top: 2rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 nav a {
@@ -27,6 +38,14 @@ nav a {
   color: #fbf5e9;
 }
 
+nav a:hover {
+  color: #b98a2c;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
 .theme {
   text-align: right;
 }
@@ -48,16 +67,18 @@ h2 {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   color: #3c4b3f;
+  padding-bottom: 2rem;
 }
 
 h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
+  color: #3c4b3f;
 }
 
 p {
-  font: 0.9rem;
+  font: 1rem;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -123,7 +144,6 @@ header {
     background-color: #5c695f;
     height: 100vh;
     width: 40vh;
-    display: grid;
     place-content: center;
     margin: 0%;
   }
@@ -157,7 +177,8 @@ header {
   text-align: left;
   top: 80%;
   right: 65%;
-  rotate: 90deg;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 /* -------------- ABOUT BACKGROUND----------- */
@@ -169,7 +190,7 @@ header {
 
 .about_text {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding-bottom: 2rem;
   padding-top: 2rem;
   padding-right: 1rem;
@@ -203,6 +224,7 @@ header {
 }
 
 /* -----------------CONTACT PAGE------------------- */
+
 #contact_section {
   display: flex;
   flex-direction: row;
@@ -222,6 +244,10 @@ header {
   padding-bottom: 2rem;
 }
 
+.headline a {
+  text-decoration: none;
+}
+
 /* -------------------------------SVG BACKGROUND POSITIONS MOBILE ------------------------- */
 
 /* ---------------- HOMEPAGE SVG-------------- */
@@ -237,7 +263,7 @@ header {
 .back1_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-03.svg);
+  background-image: url(image/port-03.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -253,7 +279,7 @@ header {
 .back2_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-04.svg);
+  background-image: url(image/port-04.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -264,13 +290,13 @@ header {
   position: fixed;
   top: 68%;
   left: 15%;
-  rotate: 10deg;
+  transform: rotate(10deg);
 }
 
 .form1_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-09.svg);
+  background-image: url(image/port-09.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -287,7 +313,7 @@ header {
 .form2_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-07.svg);
+  background-image: url(image/port-07.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -303,10 +329,10 @@ header {
 .form3_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-08.svg);
+  background-image: url(image/port-08.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  rotate: 30deg;
+  transform: rotate(30deg);
 }
 
 .flower1_container {
@@ -315,13 +341,13 @@ header {
   position: fixed;
   top: 45%;
   left: 55%;
-  rotate: 15deg;
+  transform: rotate(15deg);
 }
 
 .flower1_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-05.svg);
+  background-image: url(image/port-05.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -338,7 +364,7 @@ header {
 .flower2_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-06.svg);
+  background-image: url(image/port-06.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -351,13 +377,13 @@ header {
   position: fixed;
   top: 30%;
   left: 40%;
-  rotate: 0deg;
+  transform: rotate(0deg);
   z-index: -1;
 }
 .aboutform1_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-11.svg);
+  background-image: url(image/port-11.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -368,13 +394,13 @@ header {
   top: 60%;
   left: -15%;
   opacity: 60%;
-  rotate: 50deg;
+  transform: rotate(50deg);
   z-index: -1;
 }
 .aboutform2_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-08.svg);
+  background-image: url(image/port-08.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -384,14 +410,14 @@ header {
   position: fixed;
   top: 2%;
   left: -2%;
-  rotate: 0deg;
+  transform: rotate(0deg);
   opacity: 60%;
   z-index: -1;
 }
 .aboutflower1_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-13.svg);
+  background-image: url(image/port-13.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -409,7 +435,7 @@ header {
 .contactform1_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-11.svg);
+  background-image: url(image/port-11.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -428,7 +454,7 @@ header {
 .contactform2_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-12.svg);
+  background-image: url(image/port-12.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -440,14 +466,14 @@ header {
   top: 35%;
   left: 60%;
   z-index: -1;
-  rotate: 42deg;
+  transform: rotate(42deg);
   opacity: 50%;
 }
 
 .contactflower1_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-05.svg);
+  background-image: url(image/port-05.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -466,7 +492,7 @@ header {
 .contactflower2_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(/image/port-06.svg);
+  background-image: url(image/port-06.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -486,9 +512,6 @@ header {
   .contactname {
     text-align: center;
   }
-  /* .mail {
-    grid-row: 5/6;
-    grid-column: 2/5;*/
 
   .headline h2 .headline p {
     margin: 0px;
@@ -506,24 +529,28 @@ header {
 
 @media (min-width: 1000px) {
   /* -------------- ABOUT BACKGROUND----------- */
-
+  .about_section {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
   .about_section .section_wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
-  .section_wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  .about_section .section_wrapper_one {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding-bottom: 3rem;
   }
+  .about_des {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    text-justify: inter-word;
+    text-align: justify;
+  }
+
   .about_text {
     padding-top: 0%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .about_text h2 {
-    padding-bottom: 0%;
   }
 
   .pics_container {
@@ -564,16 +591,17 @@ header {
     right: 0%;
     background-color: #5c695f;
     overflow-x: hidden;
+    padding-top: 13rem;
   }
 
   nav ul {
     list-style-type: none;
-    padding: 7rem;
-    padding-top: 15rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 
   .port {
-    rotate: 90deg;
+    transform: rotate(90deg);
     top: 75%;
     right: 90%;
     position: sticky;
@@ -588,11 +616,7 @@ header {
     padding-top: 3rem;
   }
   .nameport h2 {
-    position: fixed;
-    text-align: left;
-    top: 80%;
     right: 90%;
-    rotate: 90deg;
   }
 
   /* -------------------------------------SVG BACKGROUND POSITIONS ----------------------------- */
@@ -601,260 +625,107 @@ header {
 
   .back1_container {
     width: 20%;
-    aspect-ratio: 3/6;
-    position: fixed;
     top: 20%;
     left: 8%;
-  }
-  .back1_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-03.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .back2_container {
     width: 18%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 45%;
     left: 22.5%;
-  }
-  .back2_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-04.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .form1_container {
     width: 18%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 71%;
     left: 11%;
-    rotate: 20deg;
-  }
-  .form1_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-09.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    transform: rotate(20deg);
   }
 
   .form2_container {
     width: 30%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 7%;
     left: 20%;
-    z-index: -1;
   }
-  .form2_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-07.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
+
   .form3_container {
     width: 16%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 45%;
     left: 39%;
     opacity: 100%;
   }
-  .form3_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-08.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    rotate: 30deg;
-  }
 
   .flower1_container {
     width: 12%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 25%;
     left: 32%;
-  }
-  .flower1_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-05.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .flower2_container {
     width: 10%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 54%;
     left: 39%;
     opacity: 100%;
-  }
-  .flower2_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-06.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   /* -------------- ABOUT BACKGROUND----------- */
 
   .aboutform1_container {
     width: 30%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: -5%;
     left: 30%;
-    rotate: -10deg;
-    z-index: -1;
-    opacity: 80%;
+    transform: rotate(-10deg);
   }
-  .aboutform1_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-14.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
+
   .aboutform2_container {
     width: 16%;
-    aspect-ratio: 2/4;
-    position: fixed;
     top: 55%;
     left: 5%;
-    opacity: 70%;
-    rotate: 80deg;
+    transform: rotate(80deg);
     z-index: -1;
-  }
-  .aboutform2_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-16.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .aboutflower1_container {
     width: 12%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 10%;
     left: 2%;
-    rotate: 10deg;
-    opacity: 100%;
-    z-index: -1;
-    opacity: 70%;
-  }
-  .aboutflower1_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-13.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    transform: rotate(10deg);
   }
 
   .aboutflower2_container {
     width: 10%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 74%;
     left: 55%;
-    rotate: 280deg;
-    z-index: -1;
-    opacity: 70%;
-  }
-  .aboutflower2_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-06.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    transform: rotate(280deg);
   }
 
   /* -------------- CONTACT BACKGROUND----------- */
 
   .contactform1_container {
     width: 32%;
-    aspect-ratio: 35/22;
-    position: fixed;
     top: 7%;
     left: 5%;
-    z-index: -1;
-  }
-  .contactform1_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-11.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .contactform2_container {
     width: 27%;
-    aspect-ratio: 503/327;
-    position: fixed;
     top: 68%;
     left: 17%;
-    opacity: 100%;
     z-index: -1;
-    opacity: 80%;
-  }
-
-  .contactform2_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-12.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .contactflower1_container {
     width: 20%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 6%;
     left: 47%;
     z-index: -1;
-    rotate: 345deg;
-    opacity: 50%;
-  }
-
-  .contactflower1_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-05.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    transform: rotate(345deg);
   }
 
   .contactflower2_container {
     width: 15%;
-    aspect-ratio: 2/3;
-    position: fixed;
     top: 71%;
     left: 0%;
-    opacity: 100%;
-    z-index: -1;
-    rotate: 19deg;
-    opacity: 50%;
-  }
-
-  .contactflower2_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/port-06.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    transform: rotate(19deg);
   }
 }
